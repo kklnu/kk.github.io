@@ -1,36 +1,42 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kiranpreet | CS Student</title>
+  <title>Kiranpreet Kaur | Portfolio</title>
+  <meta name="description" content="Kiranpreet Kaur - Computer Science student at SVSU. Full-stack and backend projects with Node.js, databases, and web development." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="container">
     <nav class="nav">
-      <div class="logo">KJ</div>
+      <div class="logo" aria-label="Logo">KK</div>
       <div class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
     <section class="hero">
-      <h1>Kiranpreet (KJ)</h1>
+      <p class="pill">Open to internships • Summer 2026 / 2027</p>
+      <h1>Kiranpreet Kaur</h1>
       <p class="subtitle">
-        Computer Science student focused on full-stack apps, backend APIs, and databases.
+        Computer Science student in Saginaw, MI focused on full-stack web apps, backend APIs, and database systems.
+        I build clean, practical projects and I’m actively seeking internship opportunities.
       </p>
 
       <div class="cta">
         <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
       </div>
 
       <div class="links">
-        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+        <a href="https://github.com/kklnu" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:kiranpreet2278@gmail.com">kiranpreet2278@gmail.com</a>
       </div>
     </section>
   </header>
@@ -38,42 +44,57 @@
   <main class="container">
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <p class="muted">A few projects I’ve built and maintained.</p>
+      <p class="muted">Pinned projects with source code on GitHub.</p>
 
       <div class="grid">
         <article class="card">
-          <h3>Fitness Tracker</h3>
-          <p>Full-stack app with authentication and CRUD for workouts, goals, and progress logs.</p>
+          <div class="card-top">
+            <h3>Fitness Tracker</h3>
+            <span class="badge">Full-Stack</span>
+          </div>
+          <p>
+            Full-stack fitness tracker with authentication and CRUD for workouts, goals, and progress logs.
+          </p>
           <div class="tags">
-            <span>Node</span><span>Express</span><span>Sequelize</span><span>MySQL</span>
+            <span>Node.js</span><span>Express</span><span>Sequelize</span><span>MySQL</span><span>Handlebars</span>
           </div>
           <div class="card-links">
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/fitness-tracker" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="#" aria-disabled="true">Live (soon)</a>
+            <a href="https://github.com/kklnu/fitness-tracker" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="disabled" href="#" aria-disabled="true">Live Demo (coming soon)</a>
           </div>
         </article>
 
         <article class="card">
-          <h3>Task Manager API</h3>
-          <p>REST API for tasks with validation and clean routes (add your key features here).</p>
+          <div class="card-top">
+            <h3>Task Manager API</h3>
+            <span class="badge">Backend</span>
+          </div>
+          <p>
+            REST API for managing tasks with structured routes and clean backend logic.
+          </p>
           <div class="tags">
-            <span>Node</span><span>Express</span><span>API</span>
+            <span>Node.js</span><span>Express</span><span>REST API</span>
           </div>
           <div class="card-links">
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/task-manager-api" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="#" aria-disabled="true">Docs (soon)</a>
+            <a href="https://github.com/kklnu/task-manager-api" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="disabled" href="#" aria-disabled="true">API Docs (coming soon)</a>
           </div>
         </article>
 
         <article class="card">
-          <h3>Movie Watchlist</h3>
-          <p>Web app to search/save movies and manage a personal watchlist.</p>
+          <div class="card-top">
+            <h3>Movie Watchlist</h3>
+            <span class="badge">Web App</span>
+          </div>
+          <p>
+            Web app to search and manage a personal movie watchlist with a simple, clean UI.
+          </p>
           <div class="tags">
             <span>JavaScript</span><span>HTML</span><span>CSS</span>
           </div>
           <div class="card-links">
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/movie-watchlist" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="#" aria-disabled="true">Live (soon)</a>
+            <a href="https://github.com/kklnu/movie-watchlist" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="disabled" href="#" aria-disabled="true">Live Demo (coming soon)</a>
           </div>
         </article>
       </div>
@@ -81,18 +102,31 @@
 
     <section id="skills" class="section">
       <h2>Skills</h2>
+      <p class="muted">A quick overview of what I work with.</p>
+
       <div class="skills">
-        <div>
-          <h4>Languages</h4>
+        <div class="skill-card">
+          <h4>Programming</h4>
           <p class="muted">JavaScript, TypeScript, Java, SQL</p>
         </div>
-        <div>
-          <h4>Frameworks</h4>
-          <p class="muted">Express, Sequelize, Handlebars</p>
+        <div class="skill-card">
+          <h4>Web & Backend</h4>
+          <p class="muted">Node.js, Express, REST APIs, Handlebars, MVC</p>
         </div>
+        <div class="skill-card">
+          <h4>Databases & Tools</h4>
+          <p class="muted">MySQL, Sequelize, Git/GitHub, VS Code</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="edu">
         <div>
-          <h4>Tools</h4>
-          <p class="muted">Git/GitHub, MySQL Workbench, VS Code</p>
+          <h3>Saginaw Valley State University (SVSU)</h3>
+          <p class="muted">B.S. in Computer Science • Expected Graduation: Winter 2027</p>
+          <p class="muted">GPA: 3.84</p>
         </div>
       </div>
     </section>
@@ -100,13 +134,22 @@
     <section id="contact" class="section">
       <h2>Contact</h2>
       <p class="muted">
-        Best way to reach me: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+        Email is best: <a href="mailto:kiranpreet2278@gmail.com">kiranpreet2278@gmail.com</a>
       </p>
+      <div class="contact-box">
+        <p class="muted">
+          I’m currently open to internships and entry-level opportunities. If you’d like to connect, email me and I’ll respond quickly.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:kiranpreet2278@gmail.com">Email Me</a>
+          <a class="btn" href="https://github.com/kklnu" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="container footer">
-    <p class="muted">© <span id="year"></span> Kiranpreet • Built with HTML/CSS</p>
+    <p class="muted">© <span id="year"></span> Kiranpreet Kaur • Hosted on GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>
